@@ -57,26 +57,18 @@ Lembre-se de seguir a documentação para fornecer os parâmetros corretos em ca
 - **Consultar Saldo da Conta Bancária** - `GET /contas/saldo?numero_conta={numero}&senha={senha}`
 - **Emitir Extrato da Conta Bancária** - `GET /contas/extrato?numero_conta={numero}&senha={senha}`
 
+### Exemplo de rotas
+
+![image](https://github.com/giseledev23/api-banco-digital/assets/140963412/fd3b0ed0-e6ad-4288-8531-c559078141e3)
+
+
 ## Persistência de Dados
 
 Os dados são armazenados em memória e gerenciados em um arquivo chamado `bancodedados.js`.
 
-```
-module.exports = {
-    id: 0,
-    banco: {
-        nome: 'Cubos Bank',
-        numero: '123',
-        agencia: '0001',
-        senha: 'Cubos123Bank'
-    },
-    contas: [],
-    saques: [],
-    depositos: [],
-    transferencias: []
-}
+![image](https://github.com/giseledev23/api-banco-digital/assets/140963412/55191b8f-acc8-4f32-b203-b3a5102dfc69)
 
-```
+
 ## Padrões e Boas Práticas
 
 - Siga os padrões REST.
